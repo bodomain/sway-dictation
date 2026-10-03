@@ -1,0 +1,6 @@
+# Managed by sway-openai-dictation. Re-run install.sh to change the keycode.
+bindcode --no-repeat @KEYCODE@ exec "@BINARY@" start
+bindcode --release --no-repeat @KEYCODE@ exec "@BINARY@" stop
+# Raw dictation bypasses correction for this recording only.
+bindcode --no-repeat Shift+@KEYCODE@ exec "@BINARY@" start raw
+bindcode --release --no-repeat Shift+@KEYCODE@ exec "@BINARY@" stop
